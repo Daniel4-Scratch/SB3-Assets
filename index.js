@@ -1,6 +1,6 @@
 var projectID = window.location.hash;
 projectID = projectID.replace("#", "");
-fetch("https://projects.scratch.mit.edu/" + projectID + "/").then(res => res.json()).then((data) => {
+fetch("https://projects.scratch.mit.edu/" + projectID).then(res => res.json()).then((data) => {
   var assets = [];
   var current;
   data.targets.forEach(function(item, index, array) {
